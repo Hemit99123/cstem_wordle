@@ -13,17 +13,17 @@ const handleSubmit = () => {
         const word_letter = word[index]
         const answer_letter = answer[index]
 
-        const inputDocument = document.getElementById(`letter${index}`)
+        const input_document = document.getElementById(`letter${index}`)
 
         if (word_letter === answer_letter) {
-            inputDocument.style.backgroundColor = "green"
+            input_document.style.backgroundColor = "green"
             console.log('R')
         }  
         else if (answer.includes(word_letter)) {
-            inputDocument.style.backgroundColor = "yellow"
+            input_document.style.backgroundColor = "yellow"
             console.log('M')
         } else {
-            inputDocument.style.backgroundColor = "red"
+            input_document.style.backgroundColor = "red"
             console.log('W')
         }
     }
