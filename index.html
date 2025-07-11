@@ -4,9 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Basic HTML Page</title>
+  <script src="index.js"></script>
+  <link rel="stylesheet" href="index.css"></link>
 </head>
 <body>
-  <h1>Hello, World!</h1>
-  <p>This is a basic HTML page.</p>
+  <h1 class="header">CSTEM Wordle</h1>
+  <div id="word-input" style="display: flex; gap: 8px;">
+    <input type="text" maxlength="1" class="letter-box" id="letter0" autocomplete="off">
+    <input type="text" maxlength="1" class="letter-box" id="letter1" autocomplete="off">
+    <input type="text" maxlength="1" class="letter-box" id="letter2" autocomplete="off">
+    <input type="text" maxlength="1" class="letter-box" id="letter3" autocomplete="off">
+    <input type="text" maxlength="1" class="letter-box" id="letter4" autocomplete="off">
+  </div>
+  <button onclick="handleSubmit()">Submit</button>
 </body>
 </html>
